@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background-color: gray;
+}
+
+/* make the div with class of Main-Page to fill the entire screen and center all of its content */
+.Main-Page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.Main-Page-h1{
+    font-size: 100px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    /* give it a reflection effect */
+    text-shadow: 0 0 10px rgba(255,255,255,0.5), 0 0 20px rgba(255,255,255,0.5), 0 0 30px rgba(255,255,255,0.5), 0 0 40px rgba(255,255,255,0.5), 0 0 50px rgba(255,255,255,0.5), 0 0 60px rgba(255,255,255,0.5), 0 0 70px rgba(255,255,255,0.5);
+    
+}
+
+.Main-Page-Navigation{
+    /* add a 100 px margin down */
+    margin-bottom: 50px;
+}
+
+/* make all of the a elements in the div with the class of Main-Page-Navigation to look like buttons and give them a shadow*/
+.Main-Page-Navigation a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+/* give the a elements in the div with the class of Main-Page-Navigation a white color when hovered over by a mouse */
+.Main-Page-Navigation a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.Character-List{
+    padding: 0;
+    margin: 0;
+}
+
+/* make each li element in the ul element with the class of Character-List into a card and place them next to each other and give the a grayish background color and make the text more pop*/
+.Character-List li{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: #c4bfbf;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+/* create a card out of the div with the class of Setting-Paragraphs */
+.Setting-Paragraphs{
+    width: 600px;
+    height: 600px;
+    background-color: #c4bfbf;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    /* make all of the p elements inside equally spaced under each other */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+/* make all of the li elements in the ul element with the class of Chapter-Summary-List into simple cards that are in a grid of 3 rows */
+.Chapter-Summary-List{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 0;
+}
+
+/* make all of the li elements cards in the ul element with the class of Chapter-Summary-List */
+.Chapter-Summary-List li{
+    list-style: none;
+    background-color: #c4bfbf;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+/* make all of the li elements in the ul with the lcass of .Common-Themes-List into cards*/
+.Common-Themes-List{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 0;
+}
+
+/* make all of the li elements in the ul with the lcass of .Common-Themes-List into cards*/
+.Common-Themes-List li{
+    list-style: none;
+    background-color: #c4bfbf;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    /* give it a width limit */
+    max-width: 300px;
+    /* make the text bigger */
+    font-size: 20px;
+}
+
+/* make the .About-Me-p into a card */
+.About-Me-Spanp{
+    width: 800px;
+    height: 600px;
+    background-color: #c4bfbf;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    /* make all of the p elements inside equally spaced under each other */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* make the .Back-Link into a button */
+.Back-Link{
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
